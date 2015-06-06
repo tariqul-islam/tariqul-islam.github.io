@@ -67,94 +67,61 @@
 		</div>
 		<script>
 			var two = new Two({ width: 1000, height: 800 }).appendTo(document.body);
-			
 			var xpos10 = 100;
 			var xpos11 = 100;
 			var ypos10 = 10;
 			var ypos11 = 400;
-			
 			var xpos20 = 800;
 			var xpos21 = 800;
 			var ypos20 = 10;
 			var ypos21 = 400;
-			
 			var Length1 = ypos11-ypos10;
 			var Length2 = ypos21-ypos20;
-			
 			var radius = 50;
-			var mass = 1; //kg
-			var amplitude = Length1*Math.sin(4*Math.PI/180); //
+			var mass = 1;
+			var amplitude = Length1*Math.sin(4*Math.PI/180);
 			var max_amp = Length1*Math.sin(4*Math.PI/180);
-			//console.log(amplitude);
-			
-			//#define blocks
 			var bothon = 1;
 			var leftoff = 2;
 			var rightoff = 3;
 			var bothoff = 4;
-			
 			var sprlenPrime = 800-100;
 			var spring = two.makePolygon(100,400,200,350,300,450,400,350,500,450,600,350,700,450,800,400,true);
-			//var spring = two.makePolygon(xpos10,ypos11,200,385,300,415,400,385,500,415,600,385,700,415,800,400,true);
 			spring.linewidth = 10;
-			
-			/*var line = two.makePolygon(100,400,800,400,true);
-			var lineXBegin = line.vertices[0].x;
-			var lineYBegin = line.vertices[0].y;
-			var lineXEnd = line.vertices[1].x;
-			var lineYEnd = line.vertices[1].y;*/
-			
 			var sprlen = 0;
 			var ll2 = 100*100+50*50;
 			var springXBegin = spring.vertices[0].x;
 			var springYBegin = spring.vertices[0].y;
 			var springXEnd = spring.vertices[1].x;
 			var springYEnd = spring.vertices[1].y;
-			
 			var string1 = two.makePolygon(xpos10,ypos10,xpos11,ypos11,true);
 			var circle1 = two.makeCircle(xpos10, ypos11, radius);
-			
 			var string2 = two.makePolygon(xpos20,ypos20,xpos21,ypos21,true);
 			var circle2 = two.makeCircle(xpos20, ypos21, radius);
-			
-			
-			
-			//var rect = two.makeRectangle(50, 0, 100, 100);
 			circle1.fill = '#FF8000';
 			circle2.fill = '#80FF00';
-			//circle1.fill = 'blue';
-			//circle2.fill = 'blue';
-			
 			circle1.stroke = 'black';
 			string1.stroke = 'red';
-			
 			circle2.stroke = 'black';
 			string2.stroke = 'red';
-			
 			var theta0 = 4*Math.PI/180;
 			var theta02 = 4*Math.PI/180;
 			var t = 0;
 			var dt = 1.0/60.0;
 			var g = 9.8;
 			var L = 0.25;
-			var k = 1; //spring constant
+			var k = 1;
 			var omega1 = Math.sqrt(g/L);
 			var omega2 = Math.sqrt(g/L+2*k/mass);
-			
-			
-			
 			var xprime1 = string1.vertices[1].x;
 			var yprime1 = string1.vertices[0].y;
 			var circle1PrimeX1 = circle1.translation.x;
 			var circle1PrimeY1 = circle1.translation.y;
 			var x=y=0;
-			
 			var xprime2 = string2.vertices[1].x;
 			var yprime2 = string2.vertices[0].y;
 			var circle1PrimeX2 = circle2.translation.x;
 			var circle1PrimeY2 = circle2.translation.y;
-			
-			//Initial values
 			var i_x1 = 0;
 			var i_x2 = 0;
 			var i_v1 = 0;
@@ -165,24 +132,16 @@
 			var phi2 = 0;
 			initElse();
 			init();
-			//console.log(init());
-			console.log(circle1)
 			var jj = 0;
 			two.bind('update', function(frameCount) {
 				t+=dt;
-				//theta1 = theta0 * Math.cos(Math.sqrt(g/L)*t);
-				//y=Length1*Math.cos(theta1);
-				//x=Length1*Math.sin(theta1);
 				x1 = A1*Math.cos(omega1*t+phi1)+A2*Math.cos(omega2*t+phi2);
 				y1 = Math.sqrt(Length1*Length1 - x1*x1);
 				string1.vertices[1].x=xprime1+x1;
 				string1.vertices[1].y=yprime1+y1;
 				circle1.translation.x=circle1PrimeX1+x1;
 				circle1.translation.y=y1;
-				//console.log(y);
 				sprlen = sprlenPrime-x1;
-				
-				//theta2 = theta02 * Math.cos(Math.sqrt(g/L)*t);
 				x2 = A1 * Math.cos(omega1*t+phi1)-A2*Math.cos(omega2*t+phi2);
 				y2 = Math.sqrt(Length1*Length1 - x2*x2);
 				string2.vertices[1].x=xprime2+x2;
@@ -190,18 +149,15 @@
 				circle2.translation.x=circle1PrimeX2+x2;
 				circle2.translation.y=y2;
 				sprlen = sprlen+x2;
-				//updateLine();
 				updateSpring();
 				spring.translation.x=450+x1;
 			}).play();
-			
 			function updateLine(){
 				line.vertices[0].x = lineXBegin + x1; 
 				line.vertices[0].y = lineYBegin + y1;
 				line.vertices[1].x = lineXEnd + x2; 
 				line.vertices[1].y = lineYEnd + y2; 
 			};
-			
 			function init(){
 				var A1cosphi1 = (i_x1+i_x2)/2;
 				var A1sinphi1 = (i_v1+i_v2)/(2*omega1);
@@ -213,7 +169,6 @@
 				phi2 = Math.atan2(A2sinphi2,A2cosphi2);
 				A2 = Math.sqrt(A2cosphi2*A2cosphi2+A2sinphi2*A2sinphi2);
 			}
-			
 			function initElse(){
 				document.getElementById("initial").addEventListener(
 					"click", 
@@ -223,27 +178,22 @@
 						var ix2 = Number(document.getElementById("ix2").value);
 						var iv1 = Number(document.getElementById("iv1").value);
 						var iv2 = Number(document.getElementById("iv2").value);
-						
 						if (isNaN(ix1) || isNaN(ix2) || isNaN(iv1) || isNaN(iv2)){
 							document.getElementById("msg").innerHTML = "Invalid";
 							return false;
 						} else {
 							document.getElementById("msg").innerHTML = "";
 						}
-						
 						i_x1 = Length1*Math.sin(ix1*Math.PI/180);
 						i_x2 = Length1*Math.sin(ix2*Math.PI/180);
 						i_v1 = iv1;
 						i_v2 = iv2;
-						
 						init();
 						t=0;
-						console.log("In Init");
 						return false;
 					},
 					false
 				);
-				
 				document.getElementById("param").addEventListener(
 					"click", 
 					function(e){
@@ -251,50 +201,37 @@
 						var pmass = Number(document.getElementById("pmass").value);
 						var plength = Number(document.getElementById("plength").value);
 						var springk = Number(document.getElementById("springk").value);
-						
 						if (isNaN(pmass) || isNaN(plength) || isNaN(springk)){
 							document.getElementById("msg").innerHTML = "Invalid";
 							return false;
 						} else {
 							document.getElementById("msg").innerHTML = "";
 						}
-						
 						L = plength;
 						Length1 = plength*400/0.25;
 						mass = pmass;
 						k = springk;
-						
 						omega1 = Math.sqrt(g/L);
 						omega2 = Math.sqrt(g/L+2*k/mass);
-						
 						spring.translation.y=10+Length1;
-						
 						init();
 						t=0;
-						console.log(mass);
 						return false;
 					},
 					false
 				);
 			}
-			
 			function updateSpring(){
-				//spring.vertices[0].x = springXBegin + x1 ; 
-				//spring.vertices[0].y = springYBegin + y1;
 				spring.vertices[1].x = springXEnd + x2;
 				spring.vertices[1].y = springYEnd + y2;
 				var len = sprlen/7;
-				var yx = Math.sqrt(ll2-len*len); //ll2 is square of the first triangular side of spring
+				var yx = Math.sqrt(ll2-len*len);
 				for(var i=1; i<8; i++){
 					spring.vertices[i].x = springXBegin + len*i;
 					spring.vertices[i].y = springYBegin + Math.pow(-1,i) * yx;
 				}
-				
 				spring.vertices[7].y = springYBegin;
 			}
-			
-			
 		</script>
-		
 	</body>
 </html>
