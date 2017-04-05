@@ -11,20 +11,20 @@
     <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>An efficient method for heart rate monitoring using wrist-type photoplethysmographic signals during intensive physical exercise</title>
-      <link>https://tariqul-islam.github.io/publication/ppg1/</link>
-      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      <title>A Time-Frequency Domain Approach of  Heart Rate Estimation From Photoplethysmographic (PPG) Signal</title>
+      <link>https://tariqul-islam.github.io/publication/ppg2/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tariqul-islam.github.io/publication/ppg1/</guid>
+      <guid>https://tariqul-islam.github.io/publication/ppg2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A Time-Frequency Domain Approach of  Heart Rate Estimation From Photoplethysmographic (PPG) Signal</title>
-      <link>https://tariqul-islam.github.io/publication/ppg2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>An Efficient Method for Heart Rate Monitoring Using Wrist-type Photoplethysmographic Signals During Intensive Physical Exercise</title>
+      <link>https://tariqul-islam.github.io/publication/ppg1/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://tariqul-islam.github.io/publication/ppg2/</guid>
+      <guid>https://tariqul-islam.github.io/publication/ppg1/</guid>
       <description></description>
     </item>
     
