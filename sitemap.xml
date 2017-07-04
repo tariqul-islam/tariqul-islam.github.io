@@ -4,6 +4,14 @@
     
     
     <url>
+      <loc>https://tariqul-islam.github.io/publication/ppg3/</loc>
+      <lastmod>2017-06-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://tariqul-islam.github.io/publication/xray1/</loc>
       <lastmod>2017-05-27T00:00:00+00:00</lastmod>
     </url>
@@ -52,6 +60,14 @@
     
     
     <url>
+      <loc>https://tariqul-islam.github.io/project/heart_rate/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://tariqul-islam.github.io/publication_types/1/</loc>
       <lastmod>2016-05-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -62,7 +78,7 @@
     
     <url>
       <loc>https://tariqul-islam.github.io/publication_types/2/</loc>
-      <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <lastmod>2017-06-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -73,13 +89,6 @@
       <loc>https://tariqul-islam.github.io/publication_types/7/</loc>
       <lastmod>2017-05-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://tariqul-islam.github.io/publication/ppg3/</loc>
     </url>
     
   
@@ -105,7 +114,33 @@
     
     
     <url>
+      <loc>https://tariqul-islam.github.io/tags/ppg/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>https://tariqul-islam.github.io/project/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://tariqul-islam.github.io/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>https://tariqul-islam.github.io/tags/</loc>
       <priority>0</priority>
     </url>
     

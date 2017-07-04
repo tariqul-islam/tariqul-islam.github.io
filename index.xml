@@ -11,6 +11,15 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Cascade and Parallel Combination (CPC) of Adaptive Filters for Estimating Heart Rate during Intensive Physical Exercise from Photoplethysmographic Signal</title>
+      <link>https://tariqul-islam.github.io/publication/ppg3/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tariqul-islam.github.io/publication/ppg3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Abnormality Detection and Localization in Chest X-Rays using Deep Convolutional Neural Networks</title>
       <link>https://tariqul-islam.github.io/publication/xray1/</link>
       <pubDate>Sat, 27 May 2017 00:00:00 +0000</pubDate>
@@ -38,12 +47,15 @@
     </item>
     
     <item>
-      <title>Cascade and Parallel Combination (CPC) of Adaptive Filters for Estimating Heart Rate during Intensive Physical Exercise from Photoplethysmographic Signal</title>
-      <link>https://tariqul-islam.github.io/publication/ppg3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>PPG: Heart Rate Estimation</title>
+      <link>https://tariqul-islam.github.io/project/heart_rate/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://tariqul-islam.github.io/publication/ppg3/</guid>
-      <description></description>
+      <guid>https://tariqul-islam.github.io/project/heart_rate/</guid>
+      <description>&lt;p&gt;In this research, we have developed algorithms for estimating heart rate from photoplethysmographic (PPG) signals under heavy noise.&lt;/p&gt;
+
+&lt;p&gt;We focused our research on adaptive filters and signal decomposition methods.&lt;/p&gt;
+</description>
     </item>
     
     <item>
