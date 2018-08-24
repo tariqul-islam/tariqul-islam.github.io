@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Mohammad Tariqul Islam</title>
+    <link>https://tariqul-islam.github.io/project/index.xml</link>
+    <description>Recent content in Projects on Mohammad Tariqul Islam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2009-2016 Mohammad Tariqul Islam</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PPG: Heart Rate Estimation</title>
+      <link>https://tariqul-islam.github.io/project/heart_rate/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://tariqul-islam.github.io/project/heart_rate/</guid>
+      <description>&lt;p&gt;In this research, we have developed algorithms for estimating heart rate from photoplethysmographic (PPG) signals under heavy noise.&lt;/p&gt;
+
+&lt;p&gt;We focused our research on adaptive filters and signal decomposition methods.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
