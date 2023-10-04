@@ -33,6 +33,9 @@
                 <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
                 <a href="https://github.com/tariqul-islam">Github</a>
               </p>
+              <p style="text-align:center">
+              <a href="sudoku.html">Sudoku</a>
+              </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/face.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/face.jpg" class="hoverZoomLink"></a>
@@ -55,6 +58,48 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	
 	<td>2023</td>
+	
+	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='merf_image'>
+          <!-- <video  width=100% height=100% muted autoplay loop>
+          <source src="images/merf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+          </div>
+          <img src='images/anomalyxray.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function merf_start() {
+            document.getElementById('merf_image').style.opacity = "1";
+          }
+
+          function merf_stop() {
+            document.getElementById('merf_image').style.opacity = "0";
+          }
+          merf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+      
+        <a href="#">
+          <papertitle>Outlier Detection in Large Radiological Datasets using UMAP</papertitle>
+        </a>
+        <br>
+        <strong>Mohammad Tariqul Islam</strong>,
+        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <br>
+        <strong>[Submitted]</strong>
+        <em>...</em>, 2023
+        <br>
+        <a href="https://github.com/tariqul-islam/data/anomaly.pdf">pre-print</a>
+        <p></p>
+        <p>
+         We show that neighbor embedding algorithms can find these anomalies, essentially by forming independent clusters that are distinct from the main (“good”) data but similar to other points with the same error type.
+        </p>
+      </td>
+    </tr>	
     
     <tr onmouseout="merf_stop()" onmouseover="merf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -137,6 +182,8 @@
         <em>ICLR workshop on Geometrical and Topological Representation Learning</em>, 2022
         <br>
         <a href="https://github.com/tariqul-islam/mane_paper">code</a>
+        //
+        <a href="data/MANE_GTRL_Poster.pdf">poster</a>
         <p></p>
         <p>
         We extend UMAP for manifold alignment.
