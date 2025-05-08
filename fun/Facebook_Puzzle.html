@@ -7516,10 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="A-Problem-I-found-on-Facebook">A Problem I found on Facebook<a class="anchor-link" href="#A-Problem-I-found-on-Facebook">¶</a></h1>
-
-<p> Posted by Ishtiaque Ahmed : https://www.facebook.com/siahmed/posts/10172349231900151</p>
-
+<h1 id="A-Problem-I-found-on-Facebook">A Problem I found on Facebook<a class="anchor-link" href="#A-Problem-I-found-on-Facebook">¶</a></h1><p>Posted by Ishtiaque Ahmed : <a href="https://www.facebook.com/siahmed/posts/10172349231900151">https://www.facebook.com/siahmed/posts/10172349231900151</a></p>
 <p>Tried to do it on paper. Felt overwhelming. So python it is.
 The problem is tated below:</p>
 <p>Two integers, A and B, are both greater than 1 and less than 100. <br/>
@@ -7626,11 +7623,11 @@ What are A and B?</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># P guys says He doesn't knwo the numbers. That means no unique factorization.</span>
-<span class="c1"># from from P we can remove the candidates that are unique (or that have unique factorization)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># P guy says He doesn't know the numbers. That means no unique factorization.</span>
+<span class="c1"># from P we can remove the candidates that are unique (or that have unique factorization)</span>
 
 <span class="n">uniques</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
 <span class="n">posxs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -7648,7 +7645,7 @@ What are A and B?</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">P2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">P2</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">))</span>
 
-<span class="c1"># We have arrived at P guy's initial candidates</span>
+<span class="c1"># We have arrived at P guy's initial candidates # After solving - Not P guy's initial candidates, but rather our geuss of what P's number is</span>
 <span class="c1"># There are 3076 candidates</span>
 </pre></div>
 </div>
@@ -7681,12 +7678,12 @@ What are A and B?</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># then S guys says he already knew that P guys didn't know the numbers.</span>
 <span class="c1"># This means the possible sum factors when multiplied never have the possibility of having unique product factorization</span>
-<span class="c1">#So now in S2, we can make the sums zero for this the triangula matirx has zero entries </span>
+<span class="c1">#So now in S2, we can make the sums zero where P has unique pairs -&gt; We saved them in posxs and posys</span>
 <span class="n">S2</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">posxs</span><span class="p">)):</span>
@@ -7699,7 +7696,7 @@ What are A and B?</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">S2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">S2</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">))</span>
 
-<span class="c1">#We have arrived at possible candidates for the sums</span>
+<span class="c1">#We have arrived at possible candidates for the sums -&gt; #after Solving - Our guess of S guy's candidates</span>
 <span class="c1">#145 possible candiadtes</span>
 </pre></div>
 </div>
@@ -7840,7 +7837,7 @@ What are A and B?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#P guys said he knwos the answer. THat means among the values in P3, there is a unique value without collosion</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#P guys said he knwos the answer. THat means among the values in P3, there is a unique value without collision</span>
 <span class="c1"># let's isolate them out</span>
 
 <span class="n">unique3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">P3</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span> <span class="c1">#donot need the zero</span>
