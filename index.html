@@ -18,9 +18,10 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Mohammad Tariqul Islam</name>
+                <name>Mohammad Tariqul Islam</name></br>
+                MIT-Novo Nordisk Artificial Intelligence Fellow
               </p>
-              <p>I am a PhD Candidate at the <a href="https://ece.princeton.edu/">Department of Electrical and Computer Engineering</a> in <a href="#">Princeton University</a> where I work in Prof. <a href="http://www.princeton.edu/~jasonf/">Jason Fleischer</a>'s lab on machine learning and data analysis.
+              <p>I am a Postdoroctal Fellow at Massachussetts Institute of Technology. Previously, I was PhD Candidate at the Department of Electrical and Computer Engineering in <a href="https://ece.princeton.edu/">Princeton University</a>. I was mentored by Prof. <a href="http://www.princeton.edu/~jasonf/">Jason Fleischer</a> in his Imaging Physics Lab and worked artificial intelligence, machine learning, imaging, and data analysis. Prior to that, I completed my masters at Bangladesh University of Engineering and Technology (BUET), where I worked on deep learning, image denoising, multimodal emotion detection, and physiological signal processing.
               </p>
               <p>
                 
@@ -48,7 +49,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My primary research interests include machine learning, signal processing, imaging.
+              My primary research interests include artificial intelligence, machine learning, signal processing, and imaging.
               </p>
               <p>
               The research topic of my PhD involves unsupervised nonlinear dimensionality reduciton (UMAP, t-SNE) methods and their applications in biomedical data analysis.
@@ -58,7 +59,96 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	
-	<td>2023</td>
+	<td>2025</td>
+	
+	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='merf_image'>
+          <!-- <video  width=100% height=100% muted autoplay loop>
+          <source src="images/merf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+          </div>
+          <img src='images/atr_rep.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function merf_start() {
+            document.getElementById('merf_image').style.opacity = "1";
+          }
+
+          function merf_stop() {
+            document.getElementById('merf_image').style.opacity = "0";
+          }
+          merf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+      
+        <a href="#">
+          <papertitle>The Shape of Attraction in UMAP: Exploring the Embedding Forces in Dimensionality Reduction</papertitle>
+        </a>
+        <br>
+        <strong>Mohammad Tariqul Islam</strong>,
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <br>
+        <strong>[Article]</strong>
+        <em>...</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2503.09101?">pre-print</a>
+        //
+        <a href="https://github.com/tariqul-islam/explaining_neighbor_embedding">codes</a>
+        <p></p>
+        <p>
+         In this paper, we analyze the forces to reveal their effects on cluster formations and visualization. Repulsion emphasizes differences, controlling cluster boundaries and inter-cluster distance. Attraction is more subtle, as attractive tension between points can manifest simultaneously as attraction and repulsion in the lower-dimensional mapping. This explains the need for learning rate annealing and motivates the different treatments between attractive and repulsive terms. Moreover, by modifying attraction, we improve the consistency of cluster formation under random initialization. Overall, our analysis makes UMAP and similar embedding methods more interpretable, more robust, and more accurate.
+        </p>
+      </td>
+    </tr>	
+	
+	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='merf_image'>
+          <!-- <video  width=100% height=100% muted autoplay loop>
+          <source src="images/merf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+          </div>
+          <img src='images/mka2.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function merf_start() {
+            document.getElementById('merf_image').style.opacity = "1";
+          }
+
+          function merf_stop() {
+            document.getElementById('merf_image').style.opacity = "0";
+          }
+          merf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+      
+        <a href="https://openreview.net/forum?id=hp8ww8EeEI">
+          <papertitle>Kernel Alignment using Manifold Approximation</papertitle>
+        </a>
+        <br>
+        <strong>Mohammad Tariqul Islam</strong>,
+        <a href="#">Du Liu</a>,
+        <a href="https://web.mit.edu/deblina-sarkar/">Deblina Sarkar</a>
+        <br>
+        <strong>[Workshop]</strong> 
+        <em>ICLR 2025 Second Workshop on Representational Alignment</em>, 2025
+        <br>
+        
+        <p></p>
+        <p>
+         We propose Manifold-approximated Kernel Alignment (MKA) that incorporates manifold geometry into the alignment task. We derive a theoretical framework for MKA, perform empirical evaluations on synthetic datasets and real-world examples to characterize and compare MKA to a popular alternative Centered Kernel Alingment (CKA). Our findings suggest that manifold-aware kernel alignment provides a more robust foundation for measuring representations, with potential applications in representation learning.
+        </p>
+      </td>
+    </tr>	
+	
+	<td>2024</td>
 	
 	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -84,23 +174,29 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
       
-        <a href="#">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-73967-5_11">
           <papertitle>Outlier Detection in Large Radiological Datasets using UMAP</papertitle>
         </a>
         <br>
         <strong>Mohammad Tariqul Islam</strong>,
-        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
         <br>
-        <strong>[Submitted]</strong>
-        <em>...</em>, 2023
+        <strong>[In Proc.]</strong>
+        <em>MICCAI Workshop on Topology-and Graph-Informed Imaging Informatics</em>, 2024
         <br>
-        <a href="data/anomaly.pdf">pre-print</a>
+        <a href="https://arxiv.org/abs/2407.21263">pre-print</a>
+        //
+        <a href="https://github.com/tariqul-islam/Outlier_Detection_UMAP">codes</a>
+        //
+        <a href="data/MICCAITGI3_poster.pdf">poster</a>
         <p></p>
         <p>
-         We show that neighbor embedding algorithms can find these anomalies, essentially by forming independent clusters that are distinct from the main (“good”) data but similar to other points with the same error type.
+         We show that neighbor embedding algorithms can find anomalies from large chest X-ray datasets, essentially by forming independent clusters that are distinct from the main (“good”) data but similar to other points with the same error type.
         </p>
       </td>
     </tr>	
+    
+    <td>2023</td>
     
     <tr onmouseout="merf_stop()" onmouseover="merf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -133,9 +229,9 @@
         <strong>Mohammad Tariqul Islam</strong>,
         <a href="#">Shaurya Aarav</a>,
         <a href="#">S. A. Wadood</a>
-        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
         <br>
-        <strong>[Congress]</strong>
+        <strong>[Conference]</strong>
         <em>Computational Optical Sensing and Imaging</em>, 2023
         <br>
         <a href="https://github.com/tariqul-islam/pySuperRes">pySuperRes</a>
@@ -177,7 +273,7 @@
         </a>
         <br>
         <strong>Mohammad Tariqul Islam</strong>,
-        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
         <br>
         <strong>[Workshop]</strong>
         <em>ICLR workshop on Geometrical and Topological Representation Learning</em>, 2022
@@ -277,7 +373,7 @@
         <!-- <a href="https://github.com/tariqul-islam/mane_paper">code</a> -->
         <p></p>
         <p>
-        We construct a dataset for predicting advertisement likebality by recording user reaction while wathing ads. Then we employ regression analysis (MSE and concordance correlation) using LSTM and estimate the viewers' affective response.
+        We constructed a dataset for predicting advertisement likebality by recording user reaction while watching ads. Then, we employ regression analysis (MSE and concordance correlation) using LSTM and estimate the viewers' affective response.
         </p>
       </td>
     </tr>
@@ -313,7 +409,7 @@
           <papertitle>Late Breaking Abstract-Identifying and Phenotyping COVID-19 Patients using Machine Learning on Chest X-rays</papertitle>
         </a>
         <br>
-        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>,
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>,
         <strong>Mohammad Tariqul Islam</strong>
         <br>
         <strong>[Abstract]</strong>
@@ -358,7 +454,7 @@
         </a>
         <br>
         <strong>Mohammad Tariqul Islam</strong>,
-        <a href="www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
+        <a href="https://www.princeton.edu/~jasonf/">Jason W. Fleischer</a>
         <br>
         <strong>[Article]</strong>
         <em>medRxiv</em>, 2020
