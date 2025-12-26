@@ -85,6 +85,51 @@
 	
 	<td>2025</td>
 	
+	
+	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='merf_image'>
+          <!-- <video  width=100% height=100% muted autoplay loop>
+          <source src="images/merf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+          </div>
+          <img src='images/mka_full.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function merf_start() {
+            document.getElementById('merf_image').style.opacity = "1";
+          }
+
+          function merf_stop() {
+            document.getElementById('merf_image').style.opacity = "0";
+          }
+          merf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+      
+        <a href="#">
+          <papertitle>Manifold Approximation Leads to Robust Kernel Alignment</papertitle>
+        </a>
+        <br>
+        <strong>Mohammad Tariqul Islam</strong>,
+        <a href="#">Du Liu</a>,
+        <a href="https://web.mit.edu/deblina-sarkar/">Deblina Sarkar</a>
+        <br>
+        <strong>[Article]</strong>
+        <em>...</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2510.22953">pre-print</a>
+        <p></p>
+        <p>
+         Centered kernel alignment (CKA) is a popular metric for comparing representations, determining equivalence of networks, and neuroscience research. However, CKA does not account for the underlying manifold and relies on numerous heuristics that cause it to behave differently at different scales of data. In this work, we propose Manifold approximated Kernel Alignment (MKA), which incorporates manifold geometry into the alignment task. We derive a theoretical framework for MKA. We perform empirical evaluations on synthetic datasets and real-world examples to characterize and compare MKA to its contemporaries. Our findings suggest that manifold-aware kernel alignment provides a more robust foundation for measuring representations, with potential applications in representation learning. 
+        </p>
+      </td>
+    </tr>	
+	
+	
 	<tr onmouseout="merf_stop()" onmouseover="merf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
