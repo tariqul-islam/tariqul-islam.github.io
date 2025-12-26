@@ -129,3 +129,23 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.notes-box{
+  height: 180px;          /* ~shows about ~6 items (adjust) */
+  overflow-y: scroll;     /* always show scrollbar */
+  overflow-x: hidden;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.notes-box ul{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.notes-box li{
+  margin: 0 0 6px 0;      /* keeps each note compact */
+  line-height: 1.25;
+}
