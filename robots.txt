@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /data/
+Disallow: /data/*.pdf
+Disallow: /data/*.PDF
