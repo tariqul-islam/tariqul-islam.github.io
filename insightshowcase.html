@@ -1,1 +1,184 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topology and Geometry in Biosignals</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fb; color: #1a1a1a; }
+    .page-shell { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+    .page-header { text-align: center; margin-bottom: 32px; }
+    .page-header h1 { margin: 0 0 10px; font-size: 2.8rem; letter-spacing: -0.03em; }
+    .page-header p { margin: 0; color: #555; font-size: 1rem; }
+    .tabs { display: flex; gap: 12px; justify-content: center; margin: 24px 0; }
+    .tab-button { background: #ffffff; border: 1px solid #d3d7df; border-radius: 999px; padding: 10px 22px; cursor: pointer; font-weight: 600; transition: background 0.2s, border-color 0.2s; }
+    .tab-button.active { background: #1e5d9f; color: #fff; border-color: #1e5d9f; }
+    .panel { background: #ffffff; border: 1px solid #dde1e8; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06); padding: 28px; }
+    .panel h2 { margin-top: 0; font-size: 1.7rem; }
+    .panel p { line-height: 1.75; color: #39404a; }
+    .contact-card { margin-top: 32px; padding: 22px; border: 1px solid #d7dee7; border-radius: 14px; background: #f7fbff; }
+    .contact-card h3 { margin-top: 0; font-size: 1.25rem; }
+    .contact-card address { font-style: normal; line-height: 1.6; color: #293241; }
+    .references-card { margin-top: 18px; padding: 18px; border: 1px solid #e2e8ef; border-radius: 12px; background: #ffffff; }
+    .references-card h3 { margin-top: 0; font-size: 1.1rem; }
+    .references-card ol { margin: 0; padding-left: 18px; color: #2f3b45; }
+    .references-card a { color: #1e5d9f; text-decoration: none; }
+    .highlight { color: #1e5d9f; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <p class="highlight">Insight Showcase</p>
+      <h1>Topology and Geometry in Biosignals</h1>
+      <p>Exploring how modern mathematical tools shape the analysis, interpretation, and application of biosignal data.</p>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Page sections">
+      <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="technical-panel" id="technical-tab">Technical</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="applications-panel" id="applications-tab">Applications</button>
+    </div>
+
+    <section class="panel" id="technical-panel" role="tabpanel" aria-labelledby="technical-tab">
+      <h2>Technical Details</h2>
+      <figure style="margin: 24px 0; text-align: center;">
+        <img src="insightfiles/central_file.png" alt="Topology and geometry workflow for biosignals" style="max-width: 50%; height: auto; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);">
+        <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">A schematic workflow from high-dimensional biosignal data through topological analysis to simplified geometric projection.</figcaption>
+      </figure>
+      <p>The central idea is the Manifold Hypothesis, which posits that high-dimensional biosignal data lie on a lower-dimensional manifold, allowing for more efficient analysis and interpretation.</p>
+      <p>Standard techniques in machine learning often fail to capture the intrinsic structure of such data, leading to suboptimal performance in tasks like classification and clustering. 
+        Nevertheless, in classification tasks, standard machine learning (ML) methods can use brute-force to learn the manifold.
+        However, for clustering, the manifold structure is crucial to identify meaningful groupings in the data.
+        A typical ML appraoch often fails to capture this.
+        A topological approach, on the other hand, can leverage the manifold structure to extract more meaningful features and improve performance in both classification and clustering tasks.
+      </p>
+      <p><strong>Our approach:</strong> Sparse K-NN graph to extract topological structure of the data.</p>
+      <h2>In the high-dimensional space</h2>
+      <p></p>
+      <figure style="margin: 24px 0; text-align: center;">
+        <img src="insightfiles/swiss_roll.png" alt="Swiss roll representation of manifold structure" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);">
+        <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">We compare the Swiss roll with various shapes of the S curve using topology-preserving neighborhood graphs.</figcaption>
+      </figure>
+      
+      <p>We comapre two classic
+        shapes: Swiss-roll (left) and S-curve (middle,
+        r = 0.5). Although the Swiss roll and the S-curve look
+        drastically different, they are topologically equivalent:
+        both lie on a one-dimensional nonlinear manifold. Fur-
+        thermore, the parameter r in the S-curve can give it dif-
+        ferent shapes (middle). A
+        color map shows the correspondence among the shapes.
+        For r < 0.4 and r > 0.6, the colors overlap, and the
+        1-D manifold disappears.
+      </p>
+
+      <p>
+        Traditional approach shows highest similarity when r=0, a case where S curve folds on top of itself.
+        In contrast, our topological approach shows highest similarity when r=0.5, a case where S curve is most similar to the Swiss roll.
+      </p>
+
+     
+    <h2>In the Projected Space</h2>
+
+    <figure style="margin: 24px 0; text-align: center;">
+      <img src="insightfiles/attraction_shape.png" alt="Attraction shape of UMAP showing contraction and expansion regimes" style="max-width: 50%; height: auto; border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);">
+      <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">Attraction shape of UMAP. The green marker denotes the minimum distance for contraction, with attraction changing from expansion to contraction as the shape crosses the $f_a=-1$ threshold.</figcaption>
+    </figure>
+
+    <p>The attraction shape visualizes how UMAP’s attractive force behaves with pairwise low-dimensional distance.</p>
+    <p>For distances smaller than the critical value, the effective attraction can become expansive, which explains why learning rate annealing is required to stabilize the embedding and avoid fuzzy clusters. In contrast, distances above the threshold contract, allowing the method to preserve local neighborhood structure while still revealing global manifold shape.</p>
+    
+    <figure style="margin: 24px 0; text-align: center;">
+      <img src="insightfiles/granularity.png" alt="Granularity control with attraction and repulsion shapes" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 24px rgba(0,0,0,0.08);">
+      <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">Using attraction and repulsion shapes 
+        to tune the granularity of projection and clustering, from coarse global structure to fine local groups. 
+        This particular example shows clustering 50,000 handwritten digits from 0 to 9.</figcaption>
+    </figure>
+    <p>The figure illustrates how varying the attraction and repulsion shapes controls cluster granularity in the low-dimensional embedding. By adjusting these forces, we can create projections that emphasize either broader cluster groupings or finer substructure while maintaining the underlying manifold topology.</p>
+    </section>
+
+    <section class="panel" id="applications-panel" role="tabpanel" aria-labelledby="applications-tab" hidden>
+      <h2>Applications</h2>
+        <h2>In the high-dimensional space</h2>
+       <figure style="margin: 24px 0; text-align: center;">
+        <img src="insightfiles/nn_info_flow.png" alt="Information flow comparison: Traditional vs Topological neural networks" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.08);">
+        <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">Information-flow matrices across network layers. Left: traditional representation showing diffuse inter-layer similarity. Right: topology-aware representation concentrates information flow along the diagonal, indicating clearer, more localized feature transformations.</figcaption>
+      </figure>
+      <p>The figure compares inter-layer information flow 
+        computed from layer activations. 
+        The traditional pipeline produces diffuse similarities 
+        across layers, while our topology-informed pipeline yields a 
+        clearer diagonal structure, 
+        indicating more localized, stable transformations across the 
+        network depth. This suggests improved interpretability and 
+        reduced spurious correlations when topology-preserving 
+        representations are used. In the illustration we used ResNet-50.
+    </p>
+
+    <figure style="margin: 24px 0; text-align: center;">
+      <img src="insightfiles/eeg_data.png" alt="High-dimensional EEG recording visualization" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.08);">
+      <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">High-dimensional EEG data: multichannel time-series embedded in a high-dimensional measurement space. 
+        Topology-preserving graphs reveal repeating motifs and channel correlations that inform downstream geometric summaries. 
+        In this particular example, we see that EEG signal is highly correlated with performance of a person while doing a task.</figcaption>
+    </figure>
+
+
+    <h2>In the Projected Space</h2>
+    <figure style="margin: 24px 0; text-align: center;">
+      <img src="insightfiles/outlier_detection.png" alt="UMAP-based outlier clusters in radiological datasets" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.08);">
+      <figcaption style="margin-top: 12px; color: #57606a; font-size: 0.95rem;">UMAP reveals independent clusters of anomalous samples (outliers) that separate from the main data while grouping similar error types together.</figcaption>
+    </figure>
+    <p>UMAP can discover anomalies by producing small, independent clusters that are distinct from the main dataset but internally consistent with specific error modes. We validated this approach on ChestX-ray14, CheXpert, and MURA — demonstrating that graph-based, topology-preserving embeddings are effective for large-scale dataset curation across data modalities.</p>
+    </section>
+
+    <aside class="contact-card">
+      <h3>Contact</h3>
+      <address>
+        <strong>Tariqul Islam</strong><br>
+        Email: <a href="mailto:mhdtariq@mit.edu">mhdtariq@mit.edu</a><br>
+        Website: <a href="https://tariqul-islam.github.io">tariqul-islam.github.io</a>
+      </address>
+    </aside>
+
+    <aside class="references-card" id="references">
+      <h3>References</h3>
+      <ol>
+        <li><a href="https://arxiv.org/abs/2503.09101" target="_blank" rel="noopener">The Shape of Attraction in UMAP</a> — arXiv:2503.09101.</li>
+        <li><a href="https://arxiv.org/abs/2407.21263" target="_blank" rel="noopener">Outlier Detection in Large Radiological Datasets using UMAP</a> — arXiv:2407.21263.</li>
+        <li><a href="https://arxiv.org/abs/2510.22953" target="_blank" rel="noopener">Manifold Approximation Leads to Robust Kernel Alignment</a> — arXiv:2510.22953.</li>
+        <li><a href="https://www.nature.com/articles/s41597-021-01046-y" target="_blank" rel="noopener">A Nature Scientific Data descriptor (2021)</a> — DOI: 10.1038/s41597-021-01046-y.</li>
+      </ol>
+    </aside>
+
+  </div>
+
+  <script>
+    const technicalTab = document.getElementById('technical-tab');
+    const applicationsTab = document.getElementById('applications-tab');
+    const technicalPanel = document.getElementById('technical-panel');
+    const applicationsPanel = document.getElementById('applications-panel');
+
+    function showPanel(panelToShow) {
+      const panels = [technicalPanel, applicationsPanel];
+      const tabs = [technicalTab, applicationsTab];
+
+      panels.forEach(panel => {
+        panel.hidden = panel !== panelToShow;
+      });
+
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.getAttribute('aria-controls') === panelToShow.id);
+        tab.setAttribute('aria-selected', tab.getAttribute('aria-controls') === panelToShow.id ? 'true' : 'false');
+      });
+    }
+
+    technicalTab.addEventListener('click', () => showPanel(technicalPanel));
+    applicationsTab.addEventListener('click', () => showPanel(applicationsPanel));
+
+    // Initialize with technical panel visible
+    showPanel(technicalPanel);
+  </script>
+</body>
+</html>
+
